@@ -40,6 +40,7 @@ router.post('/login',async(req,res)=>{
 
         if(!user || !validPassword){
             res.status(400).json("Wrong username or password")
+            return;
         }
 
         //send res
